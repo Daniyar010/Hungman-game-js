@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    background-color: #e1c140;
+  }
+  
+  .container {
+    font-size: 18px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  /*Заголовок*/
+  #options-container {
+    text-align: center;
+  }
+  
+  /*Кнопки fruits, animals, countries*/
+  #options-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px 0;
+  }
+  
+  #options-container button {
+    padding: 8px 20px;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #options-container button:hover {
+    background-color: #d2d2cf;
+    transform: translateY(-5px);
+  }
+  
+  #options-container button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+    transform: translateY(0px);
+  }
+  
+  #options-container button.active {
+    background-color: #e1c140;
+    border: 3px solid #000000;
+    color: #fff;
+  }
+  
+  /*Буквы*/
+  .letter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #letter-container button {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #letter-container button:hover {
+    background-color: #e1c140;
+  }
+  
+  #letter-container button:disabled {
+    border: 3px solid #808080;
+    color: #808080;
+    background-color: #efefef;
+  }
+  
+  /*Окно new game*/
+  .new-game-popup {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  
+  /*input*/
+  #user-input-section {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+  }
+  
+  /*----Висили----*/
+  canvas {
+    display: block;
+    margin: auto;
+  }
+  
+  /*Панель с кнопками*/
+  .hide {
+    display: none;
+  }
+  
+  /*Панель new game*/
+  #result-text h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  #result-text p {
+    font-size: 25px;
+    margin: 20px 0 40px 0;
+  }
+  
+  #result-text span {
+    font-weight: 600;
+  }
+  
+  #new-game-button {
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #e1c140;
+    border: 3px solid #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out ;
+  }
+  
+  #new-game-button:hover {
+    background-color: #978025;
+    transform: translateY(-5px);
+  }
+  
+  .win-msg {
+    color: #39d78d;
+  }
+  
+  .lose-msg {
+    color: #fe5152;
+  }
